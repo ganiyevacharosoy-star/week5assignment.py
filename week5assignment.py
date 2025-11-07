@@ -47,7 +47,7 @@ new_product = ["Statue", 6800.00]
 remove_name = "Scarf"
 count = 3
 
-# When you call your function:
+
 final_products, top_list = manage_inventory(products, prices, new_product, remove_name, count)
 print(f"Final products: {final_products}")
 print(f"Top list: {top_list}")    
