@@ -31,8 +31,8 @@ def get_most_valuable(products, prices, count):
     return result        
     
 def manage_inventory(initial_products, initial_prices, new_product_data, product_to_remove, top_count):
-    last_items_list = initial_products [:]
-    last_prices = initial_prices [:]
+    last_items_list = initial_products[:]
+    last_prices = initial_prices[:]
     add_product(last_items_list, last_prices, new_product_data[0], new_product_data[1])
     remove_product(last_items_list, last_prices, product_to_remove)
     top_items_names= get_most_valuable(last_items_list, last_prices, top_count)
